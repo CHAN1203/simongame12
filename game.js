@@ -25,6 +25,15 @@ $(document).keydown(function(){
   }
 });
 
+$(".restart").click(function(){
+  if(!started){
+
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 
 function checkAnswer(currentLevel){
 
