@@ -16,16 +16,7 @@ $('.btn').click(function() {
 
 
 
-$(document).keydown(function(){
-  if(!started){
-
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
-
-$(".restart").click(function(){
+$('.restart').click(function(){
   if(!started){
 
     $("#level-title").text("Level " + level);
